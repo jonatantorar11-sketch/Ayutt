@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#2b0710"><title>Happy Birthday ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader"><div class="loader-ring"></div><p>Menyiapkan cerita untukmu...</p></div>
+
+<section class="hero" id="home">
+  <div class="grain"></div><div class="vignette"></div><div id="hearts"></div>
+  <div class="hero-content">
+    <p class="eyebrow">A LITTLE CINEMATIC STORY</p>
+    <h1>Untuk <span>Ditaa</span> ❤️</h1>
+    <p>Ada sesuatu yang ingin aku sampaikan hari ini...</p>
+    <button class="btn" id="start">Buka Ceritanya ❤️</button>
+  </div>
+</section>
+
+<audio id="music" loop><source src="music/lagu.mp3" type="audio/mpeg"></audio>
+<button class="music" id="musicBtn">♫</button>
+
+<main id="story" class="hidden">
+<section class="scene reveal"><p class="eyebrow">TODAY IS YOUR DAY</p>
+<h2>Selamat Ulang Tahun,<br><span class="accent">Cintaku.</span></h2>
+<p>Semoga hari ini menjadi salah satu halaman paling indah dalam cerita hidupmu.</p></section>
+
+<section class="reveal"><div class="heading"><b>01</b><h2>Our Little Memories</h2></div>
+<div class="gallery">
+<figure><img src="images/foto1.jpg"><figcaption>Salah satu kenangan favoritku.</figcaption></figure>
+<figure><img src="images/foto2.jpg"><figcaption>Senyum yang selalu ingin kulihat.</figcaption></figure>
+<figure><img src="images/foto3.jpg"><figcaption>Kenangan kecil yang berarti.</figcaption></figure>
+<figure><img src="images/foto4.jpg"><figcaption>Dan masih banyak cerita lainnya.</figcaption></figure>
+</div></section>
+
+<section class="reveal"><div class="heading"><b>02</b><h2>Our Time</h2></div>
+<p>Sudah selama ini kita berjalan bersama.</p>
+<div class="counter">
+<div><strong id="years">0</strong><small>Tahun</small></div><div><strong id="months">0</strong><small>Bulan</small></div>
+<div><strong id="days">0</strong><small>Hari</small></div><div><strong id="hours">0</strong><small>Jam</small></div>
+<div><strong id="minutes">0</strong><small>Menit</small></div><div><strong id="seconds">0</strong><small>Detik</small></div>
+</div></section>
+
+<section class="reveal"><div class="heading"><b>03</b><h2>A Letter For You</h2></div>
+<div class="letter"><div id="letterText"></div></div>
+<button class="btn" id="letterBtn">Buka Surat ❤️</button></section>
+
+<section class="reveal cake-section"><div class="heading"><b>04</b><h2>Make A Wish</h2></div>
+<div class="cake"><div class="flame" id="flame">♥</div><div class="candle"></div><div class="cake-top"></div><div class="cake-body"></div></div>
+<p id="wish">Klik tombolnya dan buat satu permintaan. ✨</p>
+<button class="btn" id="blow">Padamkan Lilin</button></section>
+
+<section class="reveal"><div class="heading"><b>05</b><h2>One Last Secret</h2></div>
+<p>Ada satu pesan kecil yang sengaja aku sembunyikan.</p>
+<button class="btn" id="secretBtn">Pesan Rahasia 🔐</button></section>
+
+<section class="ending reveal"><img src="images/foto-utama.jpg"><p class="eyebrow">THE END, BUT NOT OUR STORY</p>
+<h2>Happy Birthday,<br><span class="accent">My Love ❤️</span></h2>
+<p>Terima kasih sudah menjadi bagian paling indah dari ceritaku.</p>
+<button class="btn" onclick="scrollTo({top:0,behavior:'smooth'})">Replay The Story ↻</button></section>
+</main>
+
+<div class="modal" id="modal"><div class="modal-card"><button class="close" id="close">×</button>
+<h3>🔐 Pesan Rahasia</h3><p>Masukkan kode rahasia kalian.</p><input id="code" type="password" placeholder="Kode rahasia">
+<button class="btn" id="unlock">Buka ❤️</button><p id="error"></p>
+<div id="secret" class="secret"><h3>Untukmu ❤️</h3><p>Kalau kamu membaca ini, berarti kamu menemukan rahasiaku. Kamu sangat berarti bagiku. Selamat ulang tahun, Ditaa. 🌹</p></div>
+</div></div>
+<div id="heartLayer"></div>
+<script src="script.js"></script>
+</body></html>
